@@ -18,34 +18,30 @@ Flaskはあなたに対して、なんのデータベースを使うか、など
 
 データベース統合、フォームのバリデーション、アップロードの取扱い、様々なオープン認証技術などを多数のエクステンションが提供している。Flaskは"micro"かもしれないが、様々なニーズに対して商用利用ができるようになっている。
 
-Configuration and Conventions
+コンフィグレーションと慣例
 -----------------------------
 
-Flask has many configuration values, with sensible defaults, and a few
-conventions when getting started.  By convention, templates and static files are
-stored in subdirectories within the application's Python source tree, with the
-names :file:`templates` and :file:`static` respectively. While this can be changed, you
-usually don't have to, especially when getting started.
+Flaskは多くのコンフィグレーション値を持っており、実用的なデフォルトが設定されており、始める際にいくつかの慣例がある。
 
-Growing with Flask
+慣例では、テンプレートと静的ファイルはアプリケーションのPythonソースツリー内のサブディレクトリに、テンプレートは`templates`、静的ファイルは`static`に格納されている。
+
+これは変更することができるが、特に初めて最初は通常変えないほうが良い。
+
+Flaskと成長する
 ------------------
 
-Once you have Flask up and running, you'll find a variety of extensions
-available in the community to integrate your project for production. The Flask
-core team reviews extensions and ensures approved extensions do not break with
-future releases.
+一度Flaskを始めて動かしたら、あなたのプロジェクトを商用まで統合するために、様々な種類のエクステンションがコミュニティで利用可能であることに気づく。
 
-As your codebase grows, you are free to make the design decisions appropriate
-for your project.  Flask will continue to provide a very simple glue layer to
-the best that Python has to offer.  You can implement advanced patterns in
-SQLAlchemy or another database tool, introduce non-relational data persistence
-as appropriate, and take advantage of framework-agnostic tools built for WSGI,
-the Python web interface.
+Flaskのコアチームはエクステンションのレビューを行っており、認められたエクステンションは、今後のリリースでも動かなくならないように保証している。
 
-Flask includes many hooks to customize its behavior. Should you need more
-customization, the Flask class is built for subclassing. If you are interested
-in that, check out the :ref:`becomingbig` chapter.  If you are curious about
-the Flask design principles, head over to the section about :ref:`design`.
+あなたのコードベースが成長していくにつれ、あなたは自分のプロジェクトに適したデザインを自由に決めることができる。
+Flaskは、いちばんPythonが提供すべきとてもシンプルな糊の役割をするレイヤーを提供し続ける、
 
-Continue to :ref:`installation`, the :ref:`quickstart`, or the
-:ref:`advanced_foreword`.
+あなたはSQLAlchemyや他のデータベースツールのより発展したパターンを実装できるし、もし適切ならリレーショナルでないデータベースのデータ永続性を提供できるし、
+WSGI、Python webインターフェース向けに提供された、フレームワークにとらわれないツールに比べて利点があるようにもできる。
+
+Flaskは振る舞いをカスタマイズできる多くのフックを含んでいる。もしもっとカスタマイズしたい場合は、Flaskクラスを継承して使う。
+もしこれに興味があるなら、becomingbigの章を読んでほしい。
+もしFlaskのデザイン原則に興味があるなら、デザインの章に進んでほしい。
+
+インストール、クイックスタート、高度な序文に続く
