@@ -1,28 +1,21 @@
-Foreword
+※超訳です。
+序文
 ========
 
-Read this before you get started with Flask.  This hopefully answers some
-questions about the purpose and goals of the project, and when you
-should or should not be using it.
+Flaskを始める前にこれを読んでください。ここで、プロジェクトの目的とゴールに関するいくつかの質問に対して、また、いつFlaskを使うべきか、使わないべきかという質問にうまくいけば答えられる。
 
-What does "micro" mean?
+"micro"とはどういう意味か？
 -----------------------
 
-“Micro” does not mean that your whole web application has to fit into a single
-Python file (although it certainly can), nor does it mean that Flask is lacking
-in functionality. The "micro" in microframework means Flask aims to keep the
-core simple but extensible. Flask won't make many decisions for you, such as
-what database to use. Those decisions that it does make, such as what
-templating engine to use, are easy to change.  Everything else is up to you, so
-that Flask can be everything you need and nothing you don't.
+“Micro” とはWebアプリケーション全体が一つのPythonファイルに収まる、という意味ではない（実際にはそのようなこともできるが）。また、Flaskが機能性に欠けているという意味でもない。Microframeworkの"micro"は、Flaskがコアをシンプルに、かつ拡張性がありつづけることを目標にしている、という意味である。
+Flaskはあなたに対して、なんのデータベースを使うか、などいろいろ決めさせるようなことはしない。
+そういった決定というのは、利用するテンプレートエンジンをどれにするといったようなもので、これは簡単に変えられる。その他なんでもあなた次第で、Flaskはあなたが必要とするなんにでもなれるし、あなたが必要としないものにはならない。
 
-By default, Flask does not include a database abstraction layer, form
-validation or anything else where different libraries already exist that can
-handle that. Instead, Flask supports extensions to add such functionality to
-your application as if it was implemented in Flask itself. Numerous extensions
-provide database integration, form validation, upload handling, various open
-authentication technologies, and more. Flask may be "micro", but it's ready for
-production use on a variety of needs.
+デフォルトでは、Flaskはデータベース抽象化レイヤー、フォームを含んでおらず、Flaskはすでにある別のライブラリが扱えるバリデーションやその他のものについて決めていない。
+
+そのかわりFlaskは、Flask自身に組み込んであるかのようにそのような機能を付け加えるエクステンションをサポートしている。
+
+データベース統合、フォームのバリデーション、アップロードの取扱い、様々なオープン認証技術などを多数のエクステンションが提供している。Flaskは"micro"かもしれないが、様々なニーズに対して商用利用ができるようになっている。
 
 Configuration and Conventions
 -----------------------------
